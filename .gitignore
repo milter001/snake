@@ -69,3 +69,8 @@ vue/*.ntvs*
 vue/*.njsproj
 vue/*.sln
 vue/*.sw*
+
+
+nohup.out
+data/
+
