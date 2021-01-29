@@ -3,14 +3,14 @@ package relation
 import (
 	"context"
 
-	"github.com/1024casts/snake/pkg/constvar"
+	"strawberrymaker/pkg/constvar"
 
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/internal/model"
-	"github.com/1024casts/snake/internal/repository/user"
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/internal/model"
+	"strawberrymaker/internal/repository/user"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/log"
 )
 
 const (

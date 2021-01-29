@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/pkg/conf"
 
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"

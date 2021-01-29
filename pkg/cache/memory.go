@@ -7,7 +7,7 @@ import (
 	"github.com/dgraph-io/ristretto"
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/log"
 )
 
 type memoryCache struct {

@@ -8,8 +8,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/pkg/log"
-	"github.com/1024casts/snake/pkg/redis"
+	"strawberrymaker/pkg/log"
+	"strawberrymaker/pkg/redis"
 )
 
 // VCodeService 验证码服务，主要提供生成验证码和获取验证码

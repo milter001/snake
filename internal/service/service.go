@@ -1,9 +1,9 @@
 package service
 
 import (
-	"github.com/1024casts/snake/internal/service/relation"
-	"github.com/1024casts/snake/internal/service/user"
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/internal/service/relation"
+	"strawberrymaker/internal/service/user"
+	"strawberrymaker/pkg/conf"
 )
 
 var (

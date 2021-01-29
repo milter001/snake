@@ -3,10 +3,10 @@ package middleware
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/1024casts/snake/app/api"
-	"github.com/1024casts/snake/pkg/errno"
-	"github.com/1024casts/snake/pkg/log"
-	"github.com/1024casts/snake/pkg/token"
+	"strawberrymaker/app/api"
+	"strawberrymaker/pkg/errno"
+	"strawberrymaker/pkg/log"
+	"strawberrymaker/pkg/token"
 )
 
 // AuthMiddleware 认证中间件

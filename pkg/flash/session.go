@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/sessions"
 
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/log"
 )
 
 // Store cookie storage

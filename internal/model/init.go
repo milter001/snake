@@ -8,8 +8,8 @@ import (
 	// GORM MySQL
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/log"
 )
 
 // DB 数据库全局变量

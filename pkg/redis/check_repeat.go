@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/pkg/conf"
 
 	"github.com/go-redis/redis"
 )

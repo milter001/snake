@@ -116,7 +116,7 @@ CREATE TABLE `user_base` (
      `username` varchar(255) NOT NULL DEFAULT '',
      `password` varchar(60) NOT NULL DEFAULT '',
      `avatar` varchar(255) NOT NULL DEFAULT '' COMMENT '头像',
-     `phone` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '手机号',
+     `phone` varchar(20)  NOT NULL DEFAULT '0' COMMENT '手机号',
      `email` varchar(255) NOT NULL DEFAULT '' COMMENT '邮箱',
      `sex` tinyint(4) unsigned NOT NULL DEFAULT '0' COMMENT '性别 0:未知 1:男 2:女',
      `deleted_at` timestamp NULL DEFAULT NULL,
@@ -124,7 +124,7 @@ CREATE TABLE `user_base` (
      `updated_at` timestamp NULL DEFAULT NULL,
      PRIMARY KEY (`id`),
      UNIQUE KEY `uniq_username` (`username`),
-     UNIQUE KEY `uniq_phone` (`phone`)
+     UNIQUE KEY `uniq_email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户表';
 
 LOCK TABLES `user_base` WRITE;
@@ -132,11 +132,11 @@ LOCK TABLES `user_base` WRITE;
 
 INSERT INTO `user_base` (`id`, `username`, `password`, `avatar`, `phone`, `email`, `sex`, `deleted_at`, `created_at`, `updated_at`)
 VALUES
-(1,'test-name','$2a$10$WhJY.MCtsp5kmnyl/UAdQuWbbMzxvmLCPeDhcpxyL84lYey829/ym','/uploads/avatar.jpg',13010102020,'123@cc.com',1,NULL,'2020-02-09 10:23:33','2020-05-09 10:23:33'),
-(2,'admin','$2a$10$WhJY.MCtsp5kmnyl/UAdQuWbbMzxvmLCPeDhcpxyL84lYey829/ym','',1,'1234@cc.com',0,NULL,'2020-05-20 22:42:18','2020-05-20 22:42:18'),
-(4,'admin2','$2a$10$Dps9oN3Oe3ZDMACih3DCGeTvR.jW/I8WD1NqapCJ6Vq3PzjnusI9i','',0,'12345@cc.com',0,NULL,'2020-05-20 22:43:21','2020-05-20 22:43:21'),
-(12,'user001','123456','',13810002000,'',0,NULL,'0000-00-00 00:00:00','0000-00-00 00:00:00'),
-(13,'user002','123456','',13810002001,'',0,NULL,'0000-00-00 00:00:00','0000-00-00 00:00:00');
+(1,'test-name','$2a$10$WhJY.MCtsp5kmnyl/UAdQuWbbMzxvmLCPeDhcpxyL84lYey829/ym','/uploads/avatar.jpg','13010102020','123@cc.com',1,NULL,'2020-02-09 10:23:33','2020-05-09 10:23:33'),
+(2,'admin','$2a$10$WhJY.MCtsp5kmnyl/UAdQuWbbMzxvmLCPeDhcpxyL84lYey829/ym','','1','1234@cc.com',0,NULL,'2020-05-20 22:42:18','2020-05-20 22:42:18'),
+(4,'admin2','$2a$10$Dps9oN3Oe3ZDMACih3DCGeTvR.jW/I8WD1NqapCJ6Vq3PzjnusI9i','','0','12345@cc.com',0,NULL,'2020-05-20 22:43:21','2020-05-20 22:43:21'),
+(12,'user001','123456','','13810002000','',0,NULL,'0000-00-00 00:00:00','0000-00-00 00:00:00'),
+(13,'user002','123456','','13810002001','',0,NULL,'0000-00-00 00:00:00','0000-00-00 00:00:00');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;

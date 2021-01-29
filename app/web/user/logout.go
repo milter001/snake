@@ -6,9 +6,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/sessions"
 
-	"github.com/1024casts/snake/app/web"
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/app/web"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/log"
 )
 
 // Logout user logout

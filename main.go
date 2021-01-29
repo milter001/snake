@@ -1,10 +1,5 @@
 /**
- *    ____          __
- *   / __/__  ___ _/ /_____
- *  _\ \/ _ \/ _ `/  '_/ -_)
- * /___/_//_/\_,_/_/\_\\__/
- *
- * generate by http://patorjk.com/software/taag/#p=display&f=Small%20Slant&t=Snake
+ *    
  */
 package main
 
@@ -14,12 +9,12 @@ import (
 	"github.com/spf13/pflag"
 	"google.golang.org/grpc"
 
-	"github.com/1024casts/snake/app/api"
-	rpc "github.com/1024casts/snake/internal/server"
-	"github.com/1024casts/snake/internal/service"
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/snake"
-	routers "github.com/1024casts/snake/router"
+	"strawberrymaker/app/api"
+	rpc "strawberrymaker/internal/server"
+	"strawberrymaker/internal/service"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/snake"
+	routers "strawberrymaker/router"
 )
 
 var (
@@ -30,7 +25,7 @@ var (
 // @version 1.0
 // @description snake demo
 
-// @contact.name 1024casts/snake
+// @contact.name milter001/snake
 // @contact.url http://www.swagger.io/support
 // @contact.email
 

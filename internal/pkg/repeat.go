@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/1024casts/snake/pkg/log"
-	"github.com/1024casts/snake/pkg/redis"
-	"github.com/1024casts/snake/pkg/utils"
+	"strawberrymaker/pkg/log"
+	"strawberrymaker/pkg/redis"
+	"strawberrymaker/pkg/utils"
 )
 
 // CRepeat define struct

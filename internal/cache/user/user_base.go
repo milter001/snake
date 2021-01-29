@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/1024casts/snake/internal/model"
-	"github.com/1024casts/snake/pkg/cache"
-	"github.com/1024casts/snake/pkg/redis"
+	"strawberrymaker/internal/model"
+	"strawberrymaker/pkg/cache"
+	"strawberrymaker/pkg/redis"
 )
 
 const (

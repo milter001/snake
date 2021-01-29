@@ -4,9 +4,9 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/pkg/conf"
 
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/log"
 )
 
 // Client 邮件发送客户端

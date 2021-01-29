@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	redis2 "github.com/1024casts/snake/pkg/redis"
+	redis2 "strawberrymaker/pkg/redis"
 )
 
 func Test_redisCache_SetGet(t *testing.T) {

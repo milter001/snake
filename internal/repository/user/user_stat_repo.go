@@ -7,8 +7,8 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/internal/cache/user"
-	"github.com/1024casts/snake/internal/model"
+	"strawberrymaker/internal/cache/user"
+	"strawberrymaker/internal/model"
 )
 
 // StatRepo 定义用户仓库接口

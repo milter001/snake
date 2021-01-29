@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/1024casts/snake/pkg/utils"
+	"strawberrymaker/pkg/utils"
 )
 
 // CryptoFunc 签名加密函数

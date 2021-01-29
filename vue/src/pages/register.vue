@@ -7,13 +7,27 @@
       <div class="container">
         <div class="login-form">
           <h3>
-            <span class="checked">手机号注册</span>
+            <span class="checked">邮箱注册</span>
           </h3>
           <div class="input">
-            <input type="text" placeholder="请输入手机号" v-model="mobile" />
+            <input type="text" placeholder="请输入用户名" v-model="username" />
           </div>
           <div class="input">
-            <input type="password" placeholder="请输入密码" v-model="passwd" />
+            <input type="text" placeholder="请输入邮箱" v-model="email" />
+          </div>
+          <div class="input">
+            <input
+              type="password"
+              placeholder="请输入密码"
+              v-model="password"
+            />
+          </div>
+          <div class="input">
+            <input
+              type="password"
+              placeholder="请再次输入密码"
+              v-model="confirm_password"
+            />
           </div>
           <div class="btn-box">
             <a href="javascript:;" class="btn" @click="register">注册</a>
@@ -39,6 +53,7 @@
 <script>
 import NavFooter from "./../components/NavFooter";
 import Modal from "./../components/Modal";
+import {AUTH_REQUEST} from "./../store/index"
 
 export default {
   name: "register",
@@ -48,29 +63,33 @@ export default {
   },
   data() {
     return {
-      mobile: "",
-      passwd: "",
+      username: "",
+      email: "",
+      password: "",
+      confirm_password: "",
       showModal: false,
     };
   },
   methods: {
     register() {
-      let { mobile, passwd } = this;
+      let { username, email, password, confirm_password } = this;
       this.$api
         .register({
-          mobile,
-          passwd,
-          code: "111111",
+          username,
+          email,
+          password,
+          confirm_password,
         })
         .then(() => {
-          this.showModal = true;
+          this.$store.dispatch(AUTH_REQUEST, {email, password}).then(()=>{
+            this.$router.push("/");
+          })
         });
     },
-    goToLogin(){
-      this.showModal=false;
-      this.$router.push("/login")
-
-    }
+    goToLogin() {
+      this.showModal = false;
+      this.$router.push("/login");
+    },
   },
 };
 </script>

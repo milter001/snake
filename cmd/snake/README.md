@@ -30,7 +30,7 @@ export GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
 下载
 
 ```bash
-go get -u -v github.com/1024casts/snake/cmd/snake
+go get -u -v strawberrymaker/cmd/snake
 ```
 
 windows:

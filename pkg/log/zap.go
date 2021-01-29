@@ -10,7 +10,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/1024casts/snake/pkg/net/ip"
+	"strawberrymaker/pkg/net/ip"
 )
 
 const (

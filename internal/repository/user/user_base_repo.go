@@ -9,9 +9,9 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/sync/singleflight"
 
-	"github.com/1024casts/snake/internal/cache/user"
-	"github.com/1024casts/snake/internal/model"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/internal/cache/user"
+	"strawberrymaker/internal/model"
+	"strawberrymaker/pkg/log"
 )
 
 // BaseRepo 定义用户仓库接口

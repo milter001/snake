@@ -5,12 +5,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/1024casts/snake/app/web"
-	"github.com/1024casts/snake/internal/model"
-	"github.com/1024casts/snake/internal/service"
-	"github.com/1024casts/snake/pkg/errno"
-	"github.com/1024casts/snake/pkg/flash"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/app/web"
+	"strawberrymaker/internal/model"
+	"strawberrymaker/internal/service"
+	"strawberrymaker/pkg/errno"
+	"strawberrymaker/pkg/flash"
+	"strawberrymaker/pkg/log"
 )
 
 // GetRegister register as a new user

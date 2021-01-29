@@ -6,17 +6,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/1024casts/snake/app/api/grpc/user/v1"
+	v1 "strawberrymaker/app/api/grpc/user/v1"
 
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/internal/idl"
-	"github.com/1024casts/snake/internal/model"
-	"github.com/1024casts/snake/internal/repository/user"
-	"github.com/1024casts/snake/pkg/auth"
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/log"
-	"github.com/1024casts/snake/pkg/token"
+	"strawberrymaker/internal/idl"
+	"strawberrymaker/internal/model"
+	"strawberrymaker/internal/repository/user"
+	"strawberrymaker/pkg/auth"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/log"
+	"strawberrymaker/pkg/token"
 )
 
 // 用于触发编译期的接口的合理性检查机制

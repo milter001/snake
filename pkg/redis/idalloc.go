@@ -7,8 +7,8 @@ import (
 	"github.com/go-redis/redis"
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/log"
 )
 
 // IDAlloc id生成器

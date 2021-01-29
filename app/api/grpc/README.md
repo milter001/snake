@@ -128,7 +128,6 @@ find rpc -name '*.proto' -exec protoc --twirp_out=. --go_out=. {} \;
 
 ## 实现接口
 
-请参考 [server/README.md](https://github.com/1024casts/snake/tree/master/internal/server/README.md)
 
 ## 自动注册
 

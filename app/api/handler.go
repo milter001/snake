@@ -6,7 +6,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/1024casts/snake/pkg/errno"
+	"strawberrymaker/pkg/errno"
 )
 
 // Response api的返回结构体

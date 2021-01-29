@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/log"
 )
 
 // raw 使用原生包封装的 http client

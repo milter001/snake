@@ -5,10 +5,10 @@ package testutil
 import (
 	"github.com/jinzhu/gorm"
 
-	"github.com/1024casts/snake/internal/model"
-	"github.com/1024casts/snake/internal/service"
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/redis"
+	"strawberrymaker/internal/model"
+	"strawberrymaker/internal/service"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/redis"
 )
 
 // App 结构体，主要是为了方便实例一个app

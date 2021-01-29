@@ -29,4 +29,6 @@ var (
 	ErrEmailOrPassword       = &Errno{Code: 20111, Message: "邮箱或密码错误"}
 	ErrTwicePasswordNotMatch = &Errno{Code: 20112, Message: "两次密码输入不一致"}
 	ErrRegisterFailed        = &Errno{Code: 20113, Message: "注册失败"}
+
+	
 )

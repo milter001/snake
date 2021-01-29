@@ -1,12 +1,9 @@
 # 🐍 snake
 
- [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/1024casts/snake/Go?style=flat-square)](https://github.com/1024casts/snake)
- [![codecov](https://codecov.io/gh/1024casts/snake/branch/master/graph/badge.svg)](https://codecov.io/gh/1024casts/snake)
  [![GolangCI](https://golangci.com/badges/github.com/golangci/golangci-lint.svg)](https://golangci.com)
- [![godoc](https://godoc.org/github.com/1024casts/snake?status.svg)](https://godoc.org/github.com/1024casts/snake)
- [![Go Report Card](https://goreportcard.com/badge/github.com/1024casts/snake)](https://goreportcard.com/report/github.com/1024casts/snake)
+ [![godoc](https://godoc.org/strawberrymaker?status.svg)](https://godoc.org/strawberrymaker)
+ [![Go Report Card](https://goreportcard.com/badge/strawberrymaker)](https://goreportcard.com/report/strawberrymaker)
  [![gitmoji](https://img.shields.io/badge/gitmoji-%20%F0%9F%98%9C%20%F0%9F%98%8D-FFDD67.svg?style=flat-square)](https://github.com/carloscuesta/gitmoji)
- [![License](https://img.shields.io/github/license/1024casts/snake?style=flat-square)](/LICENSE)
 
 一款适合于快速开发业务的 Go 框架，可快速构建 API 服务 或 Web 网站。
 
@@ -74,7 +71,7 @@ TIPS: 需要本地安装MySQL数据库和 Redis
 
 ```bash
 # 下载安装，可以不用是 GOPATH
-git clone https://github.com/1024casts/snake
+git clone https://strawberrymaker
 
 # 进入到下载目录
 cd snake
@@ -97,7 +94,7 @@ make build
 
 ```bash
 # 下载
-go get github.com/1024casts/snake/cmd/snake
+go get strawberrymaker/cmd/snake
 
 cd $GOPATH/src
 # 使用
@@ -142,11 +139,11 @@ snake new github.com/foo/bar -d ./
 
 ## 📖 开发规约
 
-- [配置说明](https://github.com/1024casts/snake/blob/master/conf)
-- [错误码设计](https://github.com/1024casts/snake/tree/master/pkg/errno)
-- [service 的使用规则](https://github.com/1024casts/snake/blob/master/internal/service)
-- [repository 的使用规则](https://github.com/1024casts/snake/blob/master/internal/repository)
-- [cache 使用说明](https://github.com/1024casts/snake/blob/master/pkg/cache)
+- [配置说明](https://strawberrymaker/blob/master/conf)
+- [错误码设计](https://strawberrymaker/tree/master/pkg/errno)
+- [service 的使用规则](https://strawberrymaker/blob/master/internal/service)
+- [repository 的使用规则](https://strawberrymaker/blob/master/internal/repository)
+- [cache 使用说明](https://strawberrymaker/blob/master/pkg/cache)
 
 ## 🚀 部署
 
@@ -186,7 +183,7 @@ go build -o bin_snake
 export GOROOT=/usr/local/go1.13.8
 export GOPATH=/data/build/test/src
 export GO111MODULE=on
-cd /data/build/test/src/github.com/1024casts/snake
+cd /data/build/test/src/strawberrymaker
 /usr/local/go1.13.8/bin/go build -o /data/build/bin/bin_snake -mod vendor main.go
 rsync -av /data/build/bin/ x.x.x.x:/home/go/snake
 supervisorctl restart snake
@@ -221,16 +218,16 @@ supervisorctl restart snake
 
 ## 📜 CHANGELOG
 
-- [更新日志](https://github.com/1024casts/snake/blob/master/CHANGELOG.md)
+- [更新日志](https://strawberrymaker/blob/master/CHANGELOG.md)
 
 ## 🏘️ 谁在用
 
-- [1024课堂](https://1024casts.com)
-- [FastIM](https://github.com/1024casts/fastim)
+- [1024课堂](www.baidu.com)
+- [FastIM](www.google.com)
 
 ## 💬 Discussion
 
-- Issue: https://github.com/1024casts/snake/issues
+- Issue: https://strawberrymaker/issues
 - QQ交流群：1074476202
 
 ## 🔋 JetBrains 开源证书支持

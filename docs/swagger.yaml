@@ -92,7 +92,7 @@ definitions:
 host: localhost:8080
 info:
   contact:
-    name: 1024casts/snake
+    name: milter001/snake
     url: http://www.swagger.io/support
   description: snake demo
   title: snake docs api

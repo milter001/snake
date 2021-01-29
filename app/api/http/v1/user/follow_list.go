@@ -6,10 +6,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/1024casts/snake/app/api"
-	"github.com/1024casts/snake/internal/service"
-	"github.com/1024casts/snake/pkg/errno"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/app/api"
+	"strawberrymaker/internal/service"
+	"strawberrymaker/pkg/errno"
+	"strawberrymaker/pkg/log"
 )
 
 // FollowList 关注列表
@@ -22,8 +22,7 @@ import (
 // @Success 200 {object} model.UserInfo "用户信息"
 // @Router /users/{id}/following [get]
 func FollowList(c *gin.Context) {
-	userIDStr := c.Param("id")
-	userID, _ := strconv.Atoi(userIDStr)
+	userID := api.GetUserID(c)
 
 	curUserID := api.GetUserID(c)
 	log.Infof("cur uid: %d", curUserID)

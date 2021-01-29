@@ -7,9 +7,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/app/api"
-	"github.com/1024casts/snake/pkg/errno"
-	"github.com/1024casts/snake/pkg/sign"
+	"strawberrymaker/app/api"
+	"strawberrymaker/pkg/errno"
+	"strawberrymaker/pkg/sign"
 )
 
 // SignMd5Middleware md5 签名校验中间件

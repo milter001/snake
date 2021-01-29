@@ -5,11 +5,12 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/pkg/conf"
 
-	"github.com/1024casts/snake/pkg/errno"
-	"github.com/1024casts/snake/pkg/flash"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/errno"
+	"strawberrymaker/pkg/flash"
+	"strawberrymaker/pkg/log"
+
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/sessions"
 )

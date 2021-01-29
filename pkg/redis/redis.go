@@ -6,8 +6,8 @@ import (
 	"github.com/alicebob/miniredis"
 	"github.com/go-redis/redis"
 
-	"github.com/1024casts/snake/pkg/conf"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/conf"
+	"strawberrymaker/pkg/log"
 )
 
 // RedisClient redis 客户端

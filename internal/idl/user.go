@@ -1,7 +1,7 @@
 package idl
 
 import (
-	"github.com/1024casts/snake/internal/model"
+	"strawberrymaker/internal/model"
 )
 
 // TransferUserInput 转换输入字段

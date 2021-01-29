@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/log"
 )
 
 var flashName = "flash"

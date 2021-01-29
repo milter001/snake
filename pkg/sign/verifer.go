@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/1024casts/snake/pkg/utils"
+	"strawberrymaker/pkg/utils"
 )
 
 // Verifier define struct

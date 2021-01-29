@@ -4,11 +4,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 
-	"github.com/1024casts/snake/app/api"
-	"github.com/1024casts/snake/internal/service/sms"
-	"github.com/1024casts/snake/internal/service/vcode"
-	"github.com/1024casts/snake/pkg/errno"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/app/api"
+	"strawberrymaker/internal/service/sms"
+	"strawberrymaker/internal/service/vcode"
+	"strawberrymaker/pkg/errno"
+	"strawberrymaker/pkg/log"
 )
 
 // VCode 获取验证码

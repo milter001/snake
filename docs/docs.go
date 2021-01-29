@@ -19,7 +19,7 @@ var doc = `{
         "description": "{{.Description}}",
         "title": "{{.Title}}",
         "contact": {
-            "name": "1024casts/snake",
+            "name": "milter001/snake",
             "url": "http://www.swagger.io/support"
         },
         "version": "{{.Version}}"

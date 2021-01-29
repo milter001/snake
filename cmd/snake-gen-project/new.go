@@ -11,7 +11,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	common "github.com/1024casts/snake/cmd/pkg"
+	common "strawberrymaker/cmd/pkg"
 )
 
 func runNew(ctx *cli.Context) (err error) {

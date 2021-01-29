@@ -7,9 +7,9 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/pkg/conf"
 
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/log"
 )
 
 // NewActivationEmail 发送激活邮件

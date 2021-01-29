@@ -7,24 +7,27 @@
           <a href="javascript:;">测验</a>
         </div>
         <div class="topbar-user">
-          <a href="javascript:;" v-if="mobile">欢迎你: {{ mobile }}</a>
-          <a href="javascript:;" v-if="!mobile" @click="login">登录</a>
-          <a href="javascript:;" v-if="!mobile" @click="goToRegister">注册</a>
-          <a href="javascript:;" v-if="mobile" @click="logout">退出</a>
+          <a href="javascript:;" v-if="isProfileLoaded">欢迎你: {{ userProfile.username }}</a>
+          <a href="javascript:;" v-if="!isAuthenticated" @click="login">登录</a>
+          <a href="javascript:;" v-if="!isAuthenticated" @click="goToRegister">注册</a>
+          <a href="javascript:;" v-if="isAuthenticated" @click="logout">退出</a>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import { mapState } from "vuex";
+import { mapGetters, mapState } from "vuex";
+import {AUTH_LOGOUT} from "../store/index"
 export default {
   name: "nav-header",
   data() {
     return {};
   },
   computed: {
-    ...mapState(["mobile"]),
+    ...mapGetters(["isAuthenticated", "isProfileLoaded"]),
+    ...mapState(['userProfile']),
+
   },
   mounted() {},
   methods: {
@@ -32,9 +35,7 @@ export default {
       this.$router.push("/login");
     },
     logout() {
-      this.$api.logout().then(() => {
-        this.$store.dispatch("saveMobile", "");
-      });
+      this.$store.dispatch(AUTH_LOGOUT).then(()=>{});
     },
 
     goToRegister() {

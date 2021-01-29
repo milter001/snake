@@ -7,20 +7,24 @@
       <div class="container">
         <div class="login-form">
           <h3>
-            <span class="checked">手机号登录</span>
+            <span class="checked">邮箱登录</span>
           </h3>
           <div class="input">
-            <input type="text" placeholder="请输入手机号" v-model="mobile" />
+            <input type="text" placeholder="请输入邮箱" v-model="email" />
           </div>
           <div class="input">
-            <input type="password" placeholder="请输入密码" v-model="passwd" />
+            <input type="password" placeholder="请输入密码" v-model="password" />
           </div>
           <div class="btn-box">
             <a href="javascript:;" class="btn" @click="login">登录</a>
           </div>
           <div class="tips">
             <div class="reg" @click="goToRegister">
-              立即注册<span>|</span>忘记密码？
+              立即注册
+            </div>
+            <span>|</span>
+            <div class="reg" @click="alert('正在开发...')">
+              忘记密码？
             </div>
           </div>
         </div>
@@ -30,8 +34,8 @@
   </div>
 </template>
 <script>
-import { mapActions } from "vuex";
 import NavFooter from "./../components/NavFooter";
+import { AUTH_REQUEST } from "../store/index"
 
 export default {
   name: "login",
@@ -40,32 +44,18 @@ export default {
   },
   data() {
     return {
-      mobile: "",
-      passwd: "",
+      email: "",
+      password: "",
     };
   },
   methods: {
     login() {
-      let { mobile, passwd } = this;
-      this.$api
-        .login({
-          mobile,
-          passwd,
-        })
-        .then(() => {
-          this.$api.getUserInfo().then((res = {}) => {
-            this.$store.dispatch("saveMobile", res.data.data.mobile);
-          });
-          this.$router.push({
-            name: "index",
-            params: {
-              from: "login",
-            },
-          });
-        });
+      let { email, password } = this;
+      this.$store.dispatch(AUTH_REQUEST, {"email":email, "password":password}).then(()=>{
+        this.$router.push("/");
+      })
+    
     },
-    ...mapActions(["saveMobile"]),
-
     goToRegister() {
       this.$router.push("/register");
     },

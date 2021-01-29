@@ -7,10 +7,16 @@ import api from "./api";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import axios from 'axios'
 
 const mock = false;
 if (mock) {
   require("./mock/api");
+}
+
+const token = localStorage.getItem("user-token");
+if(token){
+  axios.defaults.headers.common['Authorization'] = "Bearer " + token;
 }
 
 Vue.use(ElementUI);

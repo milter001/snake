@@ -4,10 +4,11 @@ import (
 	"html/template"
 	"time"
 
-	"github.com/1024casts/snake/app/web"
-	webUser "github.com/1024casts/snake/app/web/user"
-	"github.com/1024casts/snake/pkg/flash"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/app/web"
+	webUser "strawberrymaker/app/web/user"
+	"strawberrymaker/pkg/flash"
+	"strawberrymaker/pkg/log"
+
 	gintemplate "github.com/foolin/gin-template"
 	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
@@ -61,17 +62,18 @@ func LoadWebRouter(g *gin.Engine) *gin.Engine {
 		},
 		DisableCache: true,
 	})
+	u := router.Group("/web")
 
-	router.GET("/", web.Index)
+	u.GET("/", web.Index)
 
 	// login
-	router.GET("/login", webUser.GetLogin)
-	router.POST("/login", webUser.DoLogin)
-	router.GET("/logout", webUser.Logout)
+	u.GET("/login", webUser.GetLogin)
+	u.POST("/login", webUser.DoLogin)
+	u.GET("/logout", webUser.Logout)
 
 	// register
-	router.GET("/register", webUser.GetRegister)
-	router.POST("/register", webUser.DoRegister)
+	u.GET("/register", webUser.GetRegister)
+	u.POST("/register", webUser.DoRegister)
 
 	return router
 }

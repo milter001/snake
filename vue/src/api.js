@@ -1,8 +1,9 @@
 import { get, post } from "./axios";
 const api = {
   login: (p) => post("/login", p),
-  register: (p) => post("/signup/mobile", p),
-  logout: () => post("/logout"),
-  getUserInfo: () => get("/my/info"),
+  loginPhone:(p) => post("/login/phone", p),
+  register: (p) => post("/register", p),
+  sendVcode: (p) => post("/vcode", p),
+  getProfile: () => get("/users/profile"),
 };
 export default api;

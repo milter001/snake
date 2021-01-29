@@ -10,8 +10,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/1024casts/snake/internal/model"
-	"github.com/1024casts/snake/pkg/testutil"
+	"strawberrymaker/internal/model"
+	"strawberrymaker/pkg/testutil"
 )
 
 // see: https://rshipp.com/go-api-integration-testing/

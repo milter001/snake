@@ -11,19 +11,13 @@ export default {
   data() {
     return {};
   },
+  created() {
+
+  },
   mounted() {
-    this.getUserInfo(); // 首次打开页面时根据cookie获取用户信息
+    console.log("App.vue mounted()");
   },
-  methods: {
-    getUserInfo() {
-        this.$api
-          .getUserInfo()
-          .then((res = {}) => {
-            this.$store.dispatch("saveMobile", res.data.data.mobile);
-          });
-      
-    },
-  },
+  methods: {},
 };
 </script>
 
@@ -34,5 +28,3 @@ export default {
 @import "./assets/scss/button.scss";
 @import "./assets/scss/mixin.scss";
 </style>
-
-

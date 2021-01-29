@@ -5,7 +5,7 @@ import (
 	"github.com/qiniu/api.v7/auth"
 	"github.com/qiniu/api.v7/sms"
 
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/pkg/conf"
 )
 
 // ServiceSms 短信服务

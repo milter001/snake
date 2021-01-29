@@ -21,11 +21,11 @@ import (
 	"context"
 
 	// 框架库单列一组
-	"github.com/1024casts/snake/internal/repository/login"
-	"github.com/1024casts/snake/pkg/util/conf"
+	"strawberrymaker/internal/repository/login"
+	"strawberrymaker/pkg/util/conf"
 
 	// pb 定义单列一组
-	pb "github.com/1024casts/snake/internal/rpc/user/v0"
+	pb "strawberrymaker/internal/rpc/user/v0"
 )
 
 // 服务对象，约定为 Server
@@ -98,7 +98,7 @@ X-Trace-Id: 3kclnknyzmamo
 处理代码示例如下：
 
 ```go
-import "github.com/1024casts/snake/pkg/errno"
+import "strawberrymaker/pkg/errno"
 // ...
 
 // 这是客户端问题，返回 HTTP 4xx 状态码

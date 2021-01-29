@@ -5,8 +5,8 @@ import (
 
 	"github.com/robfig/cron/v3"
 
-	"github.com/1024casts/snake/cmd/job/demo"
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/cmd/job/demo"
+	"strawberrymaker/pkg/log"
 )
 
 // Run 计划任务

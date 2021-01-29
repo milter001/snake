@@ -7,8 +7,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/1024casts/snake/app/api/grpc/user/v1"
-	"github.com/1024casts/snake/pkg/log"
+	v1 "strawberrymaker/app/api/grpc/user/v1"
+	"strawberrymaker/pkg/log"
 )
 
 func main() {

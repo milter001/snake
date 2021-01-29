@@ -5,7 +5,7 @@ package http
 import (
 	"time"
 
-	"github.com/1024casts/snake/pkg/log"
+	"strawberrymaker/pkg/log"
 
 	"github.com/go-resty/resty/v2"
 )

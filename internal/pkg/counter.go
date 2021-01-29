@@ -8,8 +8,8 @@ import (
 
 	"github.com/go-redis/redis"
 
-	"github.com/1024casts/snake/pkg/conf"
-	redis2 "github.com/1024casts/snake/pkg/redis"
+	"strawberrymaker/pkg/conf"
+	redis2 "strawberrymaker/pkg/redis"
 )
 
 const (

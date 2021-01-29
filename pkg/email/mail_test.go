@@ -3,7 +3,7 @@ package email
 import (
 	"testing"
 
-	"github.com/1024casts/snake/pkg/conf"
+	"strawberrymaker/pkg/conf"
 )
 
 func TestSend(t *testing.T) {
