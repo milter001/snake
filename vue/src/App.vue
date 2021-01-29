@@ -5,17 +5,21 @@
 </template>
 
 <script>
+import { USER_REQUEST } from "./store/index";
 export default {
   name: "app",
   components: {},
   data() {
     return {};
   },
-  created() {
-
-  },
+  created() {},
   mounted() {
     console.log("App.vue mounted()");
+    const token = localStorage.getItem("user-token");
+
+    if (token) {
+      this.$store.dispatch(USER_REQUEST);
+    }
   },
   methods: {},
 };
